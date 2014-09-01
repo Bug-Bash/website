@@ -1,0 +1,6 @@
+.dev
+.idea
+.DS_Store
+deploy.sh
+vendor
+composer.lock
