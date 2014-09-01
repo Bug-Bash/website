@@ -6,11 +6,34 @@
         public static function all()
         {
             return array(
-                'upcoming' => array(
-                    array(
-                        'id'            => "kiwix-at-seconf",
-                        'title'         => "Kiwix @ Selenium Conf 14",
-                        'description'   => "<p>The objective of the bug bash is to help the Kiwix project by building an easy to maintain, high quality test automation suite. We would select:</p>
+                'upcoming' => array(self::fetch_info('kiwix-at-seconf')),
+                'default'  => array(
+                    'id'            => "unknown",
+                    'title'         => "Propose a Bug Bash",
+                    'description'   => "Please get in touch with bugbash.in@gmail.com if you want to have your project tested",
+                    'project_link'     => "#unknown",
+                    'project_logo_url' => "/images/projects/your_project.png",
+                    'contact_person'       => '{"1":{"name":"Your Name", "email":"unknown@example.com"}}',
+                    'start_time'    => "Pick a date and time",
+                    'location'      => "Physical or Virtual location",
+                    'location_url'  => "#",
+                ),
+                'past' => array(),
+            );
+        }
+
+        public static function invalid_id($bash_id)
+        {
+            $bashes = array('kiwix-at-seconf');
+            return !in_array($bash_id, $bashes);
+        }
+
+        public static function fetch_info($bash_id)
+        {
+            return array(
+                'id'            => "kiwix-at-seconf",
+                'title'         => "Kiwix @ Selenium Conf 14",
+                'description'   => "<p>The objective of the bug bash is to help the Kiwix project by building an easy to maintain, high quality test automation suite. We would select:</p>
 <ul>
 <li>top 3 participants with the best test automation suite</li>
 <li>we would also acknowledge the participants who have identified top 10 bugs (if any) in Kiwix.
@@ -28,29 +51,23 @@
 <li>The panel will start their review of the test suite and bug reports at 11:00 AM on Sep 6th.</li>
 <li>Right after Julian's closing keynote, the panel will announce the winners.</li>
 </ol>",
-                        'project_link'     => "http://www.kiwix.org/wiki/Main_Page",
-                        'project_logo_url' => "/images/projects/kiwix.png",
-                        'contact_person'       => '{"1":{"name":"Julian Harty", "email":"julianharty@gmail.com"}, "2":{"name":"Naresh Jain", "email":"nashjain@gmail.com"}}',
-                        'start_time'    => "Friday, Sep 5th @ 10:15 AM",
-                        'location'      => "Selenium Conf 2014",
-                        'location_url'  => "http://seleniumconf.org#venue",
-                        'pictures'        => "#",
-                        'video'         => "#",
-                        'attendees'     => Attendee::fetch_attendees_for('kiwix-at-seconf')
-                    )
-                ),
-                'default'  => array(
-                    'id'            => "unknown",
-                    'title'         => "Propose a Bug Bash",
-                    'description'   => "Please get in touch with bugbash.in@gmail.com if you want to have your project tested",
-                    'project_link'     => "#unknown",
-                    'project_logo_url' => "/images/projects/your_project.png",
-                    'contact_person'       => '{"1":{"name":"Your Name", "email":"unknown@example.com"}}',
-                    'start_time'    => "Pick a date and time",
-                    'location'      => "Physical or Virtual location",
-                    'location_url'  => "#",
-                ),
-                'past' => array(),
+                'project_link'     => "http://www.kiwix.org/wiki/Main_Page",
+                'project_logo_url' => "/images/projects/kiwix.png",
+                'contact_person'       => '{"1":{"name":"Julian Harty", "email":"julianharty@gmail.com"}, "2":{"name":"Naresh Jain", "email":"nashjain@gmail.com"}}',
+                'start_time'    => "Friday, Sep 5th @ 10:15 AM",
+                'location'      => "Selenium Conf 2014",
+                'location_url'  => "http://seleniumconf.org#venue",
+                'pictures'        => "#",
+                'video'         => "#",
+                'attendees'     => Attendee::fetch_attendees_for('kiwix-at-seconf')
+            );
+        }
+
+        public static function listing()
+        {
+            return array(
+                'upcoming'=>array('kiwix-at-seconf'=>'Kiwix @ Selenium Conf 14'),
+                'past'=>array(),
             );
         }
     }
