@@ -19,6 +19,24 @@
                 </div>";
     }
 
+    function attendees_window($bash_id, $title, $attendees)
+    {
+        $modal = "<div class='modal fade' id='{$bash_id}_attendees_modal' tabindex='-1' role='dialog' aria-labelledby='{$bash_id}_label' aria-hidden='true'>
+                  <div class='modal-dialog'>
+                    <div class='modal-content'>
+                      <div class='modal-header'>
+                        <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+                        <h4 class='modal-title' id='myModalLabel'>Attendees for {$title}</h4>
+                      </div>
+                      <div class='modal-body'>";
+        $modal .= attendee_table($attendees);
+        $modal .= "</div>
+                    </div>
+                  </div>
+                </div>";
+        return $modal;
+    }
+
     function attendee_table($attendees)
     {
         $table = "<div class='bs-component'>
@@ -60,7 +78,7 @@
         $speaker_names = "<p><i class='fa fa-cogs solo'></i>";
         $names = array();
         foreach ($contact_person as $speaker) {
-            $names[] = "&nbsp;<a href='mailto:" . $speaker->email . "?subject=Bug Bash - $title'>" . $speaker->name . "</a>";
+            $names[] = "&nbsp;&nbsp;<a href='mailto:" . $speaker->email . "?subject=Bug Bash - $title'>" . $speaker->name . "</a>";
         }
         $speaker_names .= join(", ", $names);
         $speaker_names .= "</p>";

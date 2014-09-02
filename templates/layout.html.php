@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><?php echo $data['page-title']?>Bug Bash - Given enough minds, all bugs are shallow</title>
+    <title><?php echo $data['page-title'] ?>Bug Bash - Given enough minds, all bugs are shallow</title>
     <meta name="description" content="Bug Bash is a platform for testers to showcase their testing skills and to discover open-source projects that need exploratory testing. Let's pound-on-these-products, as a community to find bugs and show-off our automation skills.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-        <script src="/js/html5shiv.js"></script>
-        <script src="/js/respond.min.js"></script>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -30,7 +30,7 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="upcoming-bash">Upcoming Bashes <span class="caret"></span></a>
                     <ul class="dropdown-menu" aria-labelledby="themes">
-                        <?php foreach ($data['bashes']['upcoming'] as $id=>$tile) {
+                        <?php foreach ($data['bashes']['upcoming'] as $id => $tile) {
                             echo bash_link($id, $tile);
                         }?>
                     </ul>
@@ -38,7 +38,7 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="past-bash">Past Bashes <span class="caret"></span></a>
                     <ul class="dropdown-menu" aria-labelledby="themes">
-                        <?php foreach ($data['bashes']['past'] as $id=>$tile) {
+                        <?php foreach ($data['bashes']['past'] as $id => $tile) {
                             echo bash_link($id, $tile);
                         }?>
                     </ul>
@@ -65,10 +65,9 @@
     <a name="top"></a>
     <?php echo display_flash_msg(); ?>
     <?php echo $content; ?>
-    <footer>
+    <footer style="margin: 2em 0;">
         <div class="row">
             <div class="col-lg-12">
-
                 <ul class="list-unstyled">
                     <li class="pull-right"><a href="#top">Back to top</a></li>
                 </ul>
@@ -79,9 +78,7 @@
 
             </div>
         </div>
-
     </footer>
-
 </div>
 
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
