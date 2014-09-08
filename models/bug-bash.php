@@ -33,7 +33,7 @@
             return array(
                 'id'            => "kiwix-at-seconf",
                 'title'         => "Kiwix @ Selenium Conf 14",
-                'description'   => "<p>Please visit <a href='https://github.com/Bug-Bash/selenium-kiwix' target='_blank'>https://github.com/Bug-Bash/selenium-kiwix</a> for details.</p>
+                'description'   => "<h3>Winners</h3><ul><li>Vinithra S P - CSC India Private Ltd</li><li>Kapil Aggarwal - Springer</li><li>Samanway - Sprinklr</li></ul><p>Please visit <a href='https://github.com/Bug-Bash/selenium-kiwix' target='_blank'>https://github.com/Bug-Bash/selenium-kiwix</a> for details.</p>
 <p>The aims of the Bug Bash extend beyond 'finding bugs', we are keen to encourage and foster collaborative work where we experiment with creating automated test suites for one or more of the kiwix applications. The conference has attracted several hundred passionate individuals; many have significant experience with the Selenium test automation framework. We also have several software testing gurus who are participating in the Bug Bash and available to collaborate with the test automation to enhance the potency of the automated tests.</p>
 <p>Participants can work individually and in groups.</p>
 <p>Kiwix is an open source offline reader for Web content. It's especially intended to make Wikipedia available offline. It runs on a large range of operating systems, on Android and on the three main Desktop operating systems: Microsoft Windows, Apple Mac OSX and GNU/Linux distributions. Its user interface supports more than 100 languages. Kiwix is used by several schools, universities and libraries all over the world for educational purpose.</p>
