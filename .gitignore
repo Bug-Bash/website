@@ -6,3 +6,4 @@ vendor
 composer.lock
 conf
 db
+php.ini
