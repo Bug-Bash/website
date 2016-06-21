@@ -54,7 +54,7 @@
                 <li><a href="https://www.facebook.com/bugbash.in" target="_blank"><i class="fa fa-facebook solo"></i></a></li>
                 <li><a href="https://github.com/bugbash/" target="_blank"><i class="fa fa-github solo"></i></a></li>
                 <li><a href="https://twitter.com/bugbash_in" target="_blank"><i class="fa fa-twitter solo"></i>&nbsp;@bugbash_in</a></li>
-                <li><a href="mailto:bugbash.in@gmail.com?subject=BugBash"><i class="fa fa-envelope solo"></i>&nbsp;Contact Us</a></li>
+                <li><a href="mailto:info@bugbash.in?subject=BugBash"><i class="fa fa-envelope solo"></i>&nbsp;Contact Us</a></li>
             </ul>
         </div>
     </div>
